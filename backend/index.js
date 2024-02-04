@@ -9,7 +9,13 @@ mongoDB();
 
 const bodyParser = require('body-parser');
 const cors = require('cors');
-app.use(cors());
+app.use(cors(
+  {
+    origin : ["https://fitness-ai-omega.vercel.app/"],
+    methods: ["POST"],
+    credentials: true
+  }
+));
 app.use(bodyParser.json());
 
 app.use(express.json())
