@@ -1,9 +1,12 @@
 const express = require('express');
+const app =express()
 const router = express.Router();
 const userinfodata = require('../../backend/Models/Userinfo');
 const getListofData = require('../index')
 const axios = require('axios');
 require('dotenv').config();
+const cors = require('cors');
+app.use(cors());
 router.post('/formdata', async (req, res) => {
     console.log(req.body);
     var postData = getListofData(req.body);
