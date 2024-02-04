@@ -6,7 +6,13 @@ const getListofData = require('../index')
 const axios = require('axios');
 require('dotenv').config();
 const cors = require('cors');
-app.use(cors());
+app.use(cors(
+    {
+    origin : ["https://fitness-ai-omega.vercel.app/"],
+    methods: ["POST"],
+    credentials: true
+  }
+));
 router.post('/formdata', async (req, res) => {
     console.log(req.body);
     var postData = getListofData(req.body);
