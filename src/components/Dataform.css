@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    /* box-sizing:border-box; */
+  }
+  
+  body{
+    font-family: Arial, sans-serif;
+    background-image: url("https://marketplace.canva.com/5FuU4/MAEUi05FuU4/1/s2/canva-treadmills-and-elliptical-trainers-in-a-gym-MAEUi05FuU4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar{
+    background: rgba(5, 1, 1, 0.8);
+    width: 500px;
+    padding: 0px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    margin-left: 20px;
+  }
+  .form-container{
+    background: rgba(255, 255, 255, 0.8);
+    width: 500px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    margin-left: 20px;
+  }
+  .form-content{
+    display:grid;
+    grid-gap:2px;
+  }
+  a{
+    width: 300px;
+
+  }
+  a:hover{
+    width: 300px;
+    border: 1px solid green;
+    
+  }
+  .form-content label{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    border-bottom:1px solid #ddd;
+  }
+  
+  .form-content label input[type="text"]{
+    width: 200px;
+    padding:5px;
+  }
+  label{
+    color: black;
+  }
+  .form-content label:last-child{
+    border:none;
+  }
+  #container {
+    text-align: left;
+  }
+  .scrollable-labels {
+      height: 600px; /* Set the desired container height */
+      overflow: auto;
+      
+    }
+  .form-content input[type="submit"]{
+    width:100%;
+    font-size: 16px;
+    padding:10px;
+    background-color: #009578;
+    border: none;
+    color: white;
+    cursor:pointer;
+    transition:0.2s ease;
+  }
+  
+  .form-content input[type="submit"]:hover{
+    opacity:0.8;
+  }
+  .response-text{
+    white-space: pre-wrap;
+    overflow-x: auto;
+    /* text-align: justify; */
+    font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+  
+  }
+  .response-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .refresh-button {
+    background-color: #008CBA; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 10px 17px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display inline-block */
+    font-size: 16px; /* Change font size */
+    margin: 4px 2px; /* Some margin */
+    transition-duration: 0.4s; /* Transition duration */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    width:100%;
+  }
+  
+  .refresh-button:hover {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+  }
+  .req{
+    color: red;
+    .req {
+      margin-left: 2px; 
+      margin-right: 2px;  
+  }
+  }
