@@ -30,7 +30,7 @@ export default function Dataform() {
     setLoading(true);
     setFormSubmitted(true);
     axios
-      .post("https://fitness-ai-omega.vercel.app/", {
+      .post("http://fitness-ai-omega.vercel.app/", {
         height,
         weight,
         primarygoal,
